@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/CSS/style-editor.css">
+    <title>Editor - Moderación | Mundial 360</title>
+</head>
+<body>
+
+    <div class="sidebar shadow">
+        <div class="text-center mb-4">
+            <h4 class="fw-bold">Mundial <span class="text-success">360</span></h4>
+            <span class="badge bg-dark text-warning">PANEL EDITOR</span>
+        </div>
+        <hr>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="editor_dashboard.html"><i class="bi bi-speedometer2"></i> Dashboard</a>
+            <a class="nav-link" href="editor_posts.html"><i class="bi bi-file-earmark-plus"></i> Mis Publicaciones</a>
+            <a class="nav-link active" href="editor_comentarios.html"><i class="bi bi-chat-left-dots"></i> Comentarios</a>
+            <a class="nav-link" href="editor_categorias.html"><i class="bi bi-tags"></i> Categorías</a>
+            <a class="nav-link" href="editor_etiquetas.html"><i class="bi bi-hash"></i> Etiquetas</a>
+           <div class="mt-5 p-3">
+                <a href="../index/index-editor.html" class="btn btn-dark w-100 btn-sm text-warning"><i class="bi bi-house-door"></i> Ver Blog</a>
+            </div>
+        </nav>
+    </div>
+
+    <nav class="navbar navbar-custom px-4 py-3 shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-text fw-bold text-dark fs-5">Moderación de Comentarios</span>
+            <span class="badge bg-warning text-dark">5 Pendientes</span>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="container-fluid py-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-dark text-white py-3">
+                    <h5 class="mb-0 fw-bold"><i class="bi bi-shield-check me-2"></i> Bandeja de Revisión</h5>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0 text-center">
+                        <thead class="table-light text-uppercase small fw-bold">
+                            <tr>
+                                <th>Usuario</th>
+                                <th>Comentario</th>
+                                <th>Post</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold text-dark">lionel.messi</td>
+                                <td class="text-start small">"¡Ojalá llegue el Cuti! Es fundamental para la Scaloneta."</td>
+                                <td class="small">¿Llega el Cuti al debut?</td>
+                                <td>
+                                    <button class="btn btn-sm btn-success me-1" title="Aprobar"><i class="bi bi-check-lg"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger" title="Eliminar"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold text-dark">fan_futbol_22</td>
+                                <td class="text-start small">"Este post es cualquiera, no saben nada de fútbol."</td>
+                                <td class="small">Scaloni define la lista</td>
+                                <td>
+                                    <button class="btn btn-sm btn-success me-1" title="Aprobar"><i class="bi bi-check-lg"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger" title="Eliminar"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

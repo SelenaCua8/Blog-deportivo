@@ -1,8 +1,8 @@
-/* 1. Variables Globales Editor */
+/* 1. Variables Globales */
 :root {
     --sidebar-width: 250px;
-    --editor-yellow: #ffc107;
-    --editor-dark: #212529;
+    --admin-red: #dc3545;
+    --admin-dark: #1a1d20;
     --transition-speed: 0.3s;
 }
 
@@ -11,18 +11,17 @@ body {
     background-color: #f8f9fa;
     overflow-x: hidden;
     font-family: system-ui, -apple-system, sans-serif;
-    margin: 0;
 }
 
-/* 3. Sidebar (Menú Lateral Amarillo) */
+/* 3. Sidebar (Menú Lateral) */
 .sidebar {
     width: var(--sidebar-width);
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--editor-yellow);
-    color: var(--editor-dark);
+    background-color: var(--admin-red);
+    color: white;
     padding-top: 20px;
     z-index: 1000;
     transition: all var(--transition-speed);
@@ -30,12 +29,10 @@ body {
 }
 
 .sidebar .nav-link {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     padding: 12px 20px;
     display: flex;
     align-items: center;
-    font-weight: 500;
-    text-decoration: none;
     transition: 0.2s;
 }
 
@@ -46,9 +43,9 @@ body {
 
 .sidebar .nav-link:hover, 
 .sidebar .nav-link.active {
-    color: black;
-    background: rgba(255, 255, 255, 0.3);
-    border-left: 5px solid var(--editor-dark);
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 5px solid white;
 }
 
 /* 4. Contenedores de Contenido */
@@ -58,26 +55,22 @@ body {
     min-height: 100vh;
 }
 
-/* 5. Navbar Superior (Dashboard Info) */
+/* 5. Navbar Superior (Breadcrumbs/User info) */
 .navbar-custom {
     margin-left: var(--sidebar-width);
     background: white;
     border-bottom: 1px solid #dee2e6;
     padding: 15px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-/* 6. Utilidades */
+/* 6. Utilidades Extra para el Admin */
+.badge-admin {
+    background-color: var(--admin-dark);
+    color: white;
+    padding: 0.5em 1em;
+}
+
 hr {
-    border: 0;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    border-color: rgba(255,255,255,0.1);
     margin: 1rem 0;
 }
-
-.main-content { /* Por si usas esta clase en lugar de .content */
-    margin-left: var(--sidebar-width);
-    padding: 40px;
-}
-  

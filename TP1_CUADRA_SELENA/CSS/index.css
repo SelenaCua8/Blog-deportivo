@@ -48,3 +48,67 @@
     background-color: #dc3545; 
     color: white;
 }
+
+/*para perfil user*/
+:root {
+    --sidebar-width: 250px;
+    --user-green: #28a745;
+    --user-dark: #1a1d20;
+    --transition-speed: 0.3s;
+}
+
+body {
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--user-green);
+    color: white;
+    padding-top: 20px;
+    z-index: 1000;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.sidebar .nav-link:hover, 
+.sidebar .nav-link.active {
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 5px solid white;
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.navbar-custom {
+    margin-left: var(--sidebar-width);
+    background: white;
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

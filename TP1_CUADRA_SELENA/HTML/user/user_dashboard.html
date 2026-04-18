@@ -5,51 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/CSS/index.css">
     <title>Mi Panel - Mundial 360</title>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-dark bg-success shadow-sm mb-4">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index-expectador.html">Mundial 360</a>
-            <a href="index-expectador.html" class="btn btn-outline-light btn-sm">Volver al Blog</a>
+<body>
+    <div class="sidebar shadow">
+        <div class="text-center mb-4">
+            <h4 class="fw-bold">Mundial <span class="text-dark">360</span></h4>
+            <span class="badge bg-dark">MI CUENTA</span>
+        </div>
+        <hr>
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="user_dashboard.html"><i class="bi bi-speedometer2"></i> Dashboard</a>
+            <a class="nav-link" href="user_perfil.html"><i class="bi bi-person-gear"></i> Mi Perfil</a>
+            <a class="nav-link" href="user_comentarios.html"><i class="bi bi-chat-left-text"></i> Mis Comentarios</a>
+            <div class="mt-5 p-3">
+                <a href="../index.html" class="btn btn-dark w-100 btn-sm text-white"><i class="bi bi-house"></i> Volver al Blog</a>
+            </div>
+        </nav>
+    </div>
+
+    <nav class="navbar navbar-custom px-4 py-3 shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-text fw-bold text-dark fs-5">Bienvenido, Lionel 👋</span>
+            <a href="../login.html" class="btn btn-outline-danger btn-sm">Salir</a>
         </div>
     </nav>
 
-    <main class="container">
-        <div class="row">
-            <div class="col-md-12 mb-4">
-                <h2>Hola, <span class="text-success">Lionel</span> 👋</h2>
-                <p class="text-muted">Este es tu resumen de actividad en el blog.</p>
-            </div>
-            
-            <div class="col-md-4 mb-3">
-                <div class="card border-0 shadow-sm text-center p-3">
-                    <div class="card-body">
-                        <i class="bi bi-star-fill text-warning fs-1"></i>
-                        <h4 class="mt-2">8 Favoritos</h4>
-                        <a href="perfil-espec.html" class="btn btn-sm btn-success">Ver guardados</a>
+    <main class="content">
+        <div class="container-fluid py-4">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm p-4 text-center h-100">
+                        <i class="bi bi-bookmark-heart text-success display-4 mb-3"></i>
+                        <h3>Notas Guardadas</h3>
+                        <p class="text-muted small">Tienes 8 artículos en tus favoritos.</p>
+                        <a href="user_perfil.html" class="btn btn-success rounded-pill mt-auto">Ver Favoritos</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card border-0 shadow-sm text-center p-3">
-                    <div class="card-body">
-                        <i class="bi bi-chat-left-text text-success fs-1"></i>
-                        <h4 class="mt-2">12 Comentarios</h4>
-                        <a href="user_comentarios.html" class="btn btn-sm btn-outline-success">Mi historial</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card border-0 shadow-sm text-center p-3">
-                    <div class="card-body">
-                        <i class="bi bi-person-gear text-secondary fs-1"></i>
-                        <h4 class="mt-2">Mi Perfil</h4>
-                        <a href="user_perfil.html" class="btn btn-sm btn-outline-secondary">Editar datos</a>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm p-4 text-center h-100">
+                        <i class="bi bi-chat-quote text-success display-4 mb-3"></i>
+                        <h3>Tus Comentarios</h3>
+                        <p class="text-muted small">Has participado en 12 debates.</p>
+                        <a href="user_comentarios.html" class="btn btn-outline-success rounded-pill mt-auto">Ver Historial</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
