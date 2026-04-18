@@ -31,3 +31,20 @@
             border-color: #28a745;
             box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
         }
+
+        /*COLORES SEGUN EL ROL*/
+      
+.badge-espectador {
+    background-color: #28a745; 
+    color: white;
+}
+
+.badge-editor {
+    background-color: #ffc107; 
+    color: black;
+}
+
+.badge-admin {
+    background-color: #dc3545; 
+    color: white;
+}

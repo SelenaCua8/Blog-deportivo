@@ -1,0 +1,27 @@
+Registro de usuarios -> listoo
+login -> listoo
+
+vamos a hacer el home principal
+con 3 colores distintos
+verde -> el que mira nada mas
+rojo -> administrador
+amarillo -> editor
+
+index-admin ->listo
+index-editor -> listo
+index-expectador -> listo
+
+post-exp -> listo
+post-adm ->listo
+post-exp -> listo
+
+perfil admin -> listo
+perfil editor -> listo
+perfil espec -> listo
+
+categorias-editor -> listo
+cat admin -> listo
+cat espc -> listo
+
+admin-usuarios listo
+editor post listo

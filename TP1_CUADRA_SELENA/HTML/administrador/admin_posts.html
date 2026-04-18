@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <title>Document</title>
+</head>
+<body class="container">
+      <header class="blog-header py-3 border-bottom mb-4" style="border-top: 4px solid #dc3545;">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <span class="badge bg-danger p-2">ADMINISTRACIÓN ⚙️</span>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark fs-2 fw-bold text-decoration-none" href="#">Mundial <span style="color: #28a745;">360</span></a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <div class="btn-group me-2">
+          <button class="btn btn-sm btn-dark">Usuarios</button>
+          <button class="btn btn-sm btn-dark">Reportes</button>
+        </div>
+        <a class="btn btn-sm btn-outline-danger" href="#">Salir</a>
+      </div>
+    </div>
+  
+      <div class="nav-scroller py-1 mb-2">
+  <nav class="nav d-flex justify-content-between">
+    <a class="p-2 link-secondary text-decoration-none" href="#">Mundial</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Fútbol</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Básquet</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Tenis</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Rugby</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">F1</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Boxeo</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Opinión</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Entrevistas</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Estadísticas</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Galería</a>
+    <a class="p-2 link-secondary text-decoration-none" href="#">Archivo</a>
+  </nav>
+  </header>
+</div>
+
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-9">
+            
+            <div class="alert alert-danger d-flex justify-content-between align-items-center shadow-sm mb-4 border-start border-4">
+                <div>
+                    <i class="bi bi-shield-lock-fill me-2"></i>
+                    <strong>Modo Administrador:</strong> Estás visualizando esta publicación con permisos de edición.
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-sm btn-outline-danger">Ocultar Post</button>
+                    <button class="btn btn-sm btn-danger">Eliminar</button>
+                </div>
+            </div>
+
+            <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                
+                <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                         class="card-img-top" alt="Cuti Romero" style="height: 450px; object-fit: cover; filter: brightness(0.9);">
+                    <span class="position-absolute top-0 end-0 m-3 badge bg-dark opacity-75">ID: #00456</span>
+                </div>
+
+                <div class="card-body p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-danger px-3 py-2">ALERTA ROJA</span>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-light border" type="button">
+                                ⚙️ Ajustes de Post
+                            </button>
+                        </div>
+                    </div>
+
+                    <h1 class="card-title fw-bold display-5 mb-4">¿Alerta Mundial? El Cuti Romero en duda tras el durísimo golpe</h1>
+
+                    <p class="card-text fs-5 text-secondary">
+                        La Selección Argentina contiene el aliento. Tras el choque fortuito en el último encuentro, el defensor central del Tottenham encendió las alarmas del cuerpo técnico de Scaloni.
+                    </p>
+                    
+                    <div class="p-3 bg-light border-start border-danger border-4 my-4">
+                        <p class="mb-0 fst-italic">"Es un guerrero, pero no vamos a arriesgar a nadie si no está al 100%", comentaron desde el predio de Ezeiza.</p>
+                    </div>
+
+                    <p class="card-text fs-5 text-secondary mb-5">
+                        La hinchada ya empezó a llenar las redes de mensajes de aliento para el "Cuti", esperando que solo sea un susto y el caudillo de la defensa pueda estar presente en la cita máxima.
+                    </p>
+
+                    <div class="mt-5 border-top pt-4 d-flex justify-content-between">
+                        <a href="index-administrador.html" class="btn btn-outline-dark rounded-pill px-4">
+                            ← Volver al Panel
+                        </a>
+                        <div>
+                            <button class="btn btn-warning rounded-pill px-4 me-2">Editar Contenido</button>
+                            <button class="btn btn-primary rounded-pill px-4">Destacar en Portada</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-dark text-white rounded-3 small opacity-75">
+                <p class="mb-0"><strong>Última modificación:</strong> 18/04/2026 19:45 por Admin_Mundial360</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+  <footer class="text-white text-center py-5 mt-5" style="background-color: #dc3545;">
+        <p class="mb-1 fw-bold">SISTEMA DE ADMINISTRACIÓN CENTRAL - MUNDIAL 360</p>
+        <p><a href="#" class="text-white small text-decoration-none">Volver arriba</a></p>
+    </footer>
+    
+</body>
+</html>
